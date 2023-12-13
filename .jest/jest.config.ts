@@ -25,4 +25,5 @@ export default {
     }],
   },
   verbose: true,
+  runner: "jest-light-runner",
 }
