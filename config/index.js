@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['../dist/main.js'],
+  plugins: ['../lib/main.js'],
   rules: {
     'stylistic/at-rule-name-case': 'lower',
     'stylistic/at-rule-name-space-after': 'always-single-line',

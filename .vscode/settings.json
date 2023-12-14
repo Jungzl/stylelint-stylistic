@@ -72,4 +72,16 @@
     "editor.suggest.insertMode": "replace",
     "files.insertFinalNewline": true
   },
+  "[css][less][scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": "explicit"
+    }
+  },
+  "[javascript][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "explicit"
+    }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
 }

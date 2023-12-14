@@ -1,8 +1,6 @@
 export default {
   collectCoverageFrom: [
     '/lib/**/*.js',
-    '/lib/**/*.ts',
-    '!/lib/**/*.d.ts',
   ],
   coverageDirectory: '.jest/coverage',
   coverageReporters: ['lcov'],
@@ -17,13 +15,8 @@ export default {
   preset: 'jest-preset-stylelint',
   rootDir: './..',
   setupFilesAfterEnv: [
-    './.jest/jest.setup.ts',
+    './.jest/jest.setup.js',
   ],
-  transform: {
-    '^.+\\.ts$': ['ts-jest', {
-      isolatedModules: true,
-    }],
-  },
   verbose: true,
   runner: "jest-light-runner",
 }

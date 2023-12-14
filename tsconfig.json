@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "inlineSourceMap": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "noFallthroughCasesInSwitch": true,
     "outDir": "./dist",
     "removeComments": true,
@@ -16,10 +16,11 @@
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es2020",
+    "target": "ES2022",
+    "lib": ["ES2022"]
   },
   "include": [
     "lib/**/*.js",
     "lib/**/*.ts"
-  ],
+  ]
 }
